@@ -7,4 +7,10 @@
 #    - 7 -> да
 #    - 1 -> нет
 
-
+day_week = int(input('Введите цифру -> '))
+if day_week < 1 or day_week > 7:
+    print('Такого дня недели не существует')
+elif day_week >= 1 and day_week <= 5:
+    print('-', day_week, '-> нет')
+elif day_week == 6 or day_week == 7:
+    print('-', day_week, '-> да')
