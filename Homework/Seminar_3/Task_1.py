@@ -3,3 +3,11 @@
 # Пример:
 # - [2, 3, 5, 9, 3] -> на нечётных позициях элементы 3 и 9, ответ: 12
 
+list_check = list(map(int,input('Введите несколько чисел через пробел и нажмите <ENTER> -> ').split()))
+result = 0
+index = 1
+for i in list_check:
+    if index < len(list_check):
+        result += list_check[index]
+        index += 2
+print(f'{list_check} -> ответ: {result}')
