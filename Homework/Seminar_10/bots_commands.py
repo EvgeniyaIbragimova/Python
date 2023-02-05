@@ -18,7 +18,7 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def calc_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f'/sum\n/sub\n/mult\n/div\n/exp')
 
-# Функция сложения 2-х чисел
+# Функция сложения 2-х чисел 
 async def sum_command(update: Update, context: ContextTypes.DEFAULT_TYPE):
     msg = update.message.text
     print(msg)
